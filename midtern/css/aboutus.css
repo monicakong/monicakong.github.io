@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    background: #FFF3EE;
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    position: relative;
+    margin-top: -2000px;
+    height: 180px;
+    clear: both;
+}
+
+.member {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1240px;
+}
+
+.member1 {
+    position: relative;
+    width: 270px;
+    float: left;
+    margin: 20px;
+    margin-bottom: 200px;
+}
+
+.member img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
+
+.info {
+    opacity: 0;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .3);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 13pt;
+    line-height: 30px;
+    border-radius: 40px;
+}
+
+.member p {
+    color: #fff;
+    font-size: 20pt;
+}
+
+.info:hover {
+    transition: 500ms;
+    opacity: 1;
+}
+
+.myfeet {
+    height: 300px;
+    width: 100%;
+    background-color: #DB6739;
+    flex-shrink: 0;
+}
+
+footer .p1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+}
+
+footer .p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 20px
+}
+
+footer img {
+    position: relative;
+    bottom: 10px;
+    left: 430px;
+    width: 150px;
+    height: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

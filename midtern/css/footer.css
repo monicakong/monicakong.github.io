@@ -1,0 +1,32 @@
+.myfeet {
+    height: 300px;
+    width: 100%;
+    background-color: #DB6739;
+    flex-shrink: 0;
+}
+
+footer .p1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+}
+
+footer .p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 20px
+}
+
+footer img {
+    position: relative;
+    bottom: 10px;
+    left: 430px;
+    width: 150px;
+    height: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
