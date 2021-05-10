@@ -1,0 +1,30 @@
+.me {
+  height: 300px;
+  width: 900px;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fbc4ab;
+}
+
+img.a {
+  height: 290px;
+  float: left;
+  padding-right: 40px;
+  border-right: #f08080 dotted 10px;
+}
+
+h1.m {
+
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 3px 1px 3px #333333;
+  padding-left: 300px;
+
+}
+
+h1.m:hover {
+  color: #f08080;
+}
