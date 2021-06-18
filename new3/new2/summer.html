@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="final.css">
+  <link rel="stylesheet" href="css/fontawesome/css/all.css">
+  <title>首頁</title>
+  <script>
+    function showalert() {
+      alert("已加入追蹤清單");
+    }
+  </script>
+</head>
+
+<body>
+  <!--header-->
+  <main>
+    <a name="a"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+
+          <a class="nav-link active" aria-current="page" href="index.html"><img src="img/home.png" width="35px"></a>
+
+
+        <li class="nav-item ">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Products</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="spring.html">Spring</a></li>
+            <li><a class="dropdown-item" href="summer.html">Summer</a></li>
+            <li><a class="dropdown-item" href="autumn.html">Autumn</a></li>
+            <li><a class="dropdown-item" href="winter.html">Winter</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html">Shipping Car.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="member.html">Member Center.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="us.html">Contant us.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Log in.</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+
+    </nav>
+    <!--動態廣告-->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+
+          <div class="row">
+            <div class="col">
+              <img src="img/2.jpg" width="105%" height="110%" alt="...">
+            </div>
+            <div class="col">
+              <img src="img/2.jpg" width="105%" height="110%" alt="...">
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+
+          <div class="row">
+            <div class="col">
+              <img src="img/3.jpg" width="110%" height="110%" alt="...">
+            </div>
+            <div class="col">
+              <img src="img/3.jpg" width="110%" height="110%" alt="...">
+            </div>
+          </div>
+
+
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <img src="img/5.jpg" width="110%" height="110%" alt="...">
+            </div>
+            <div class="col">
+              <img src="img/5.jpg" width="110%" height="110%" alt="...">
+            </div>
+          </div>
+        </div>
+      </div><span class="tit">
+
+        <marquee height="50" scrollamount="20">Summer</marquee>
+
+      </span>
+    </div>
+    </div>
+    </div>
+  </main>
+  <!----商品擺放-->
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/s11.jpg" onmouseover="this.src='img/s13.jpg';" onmouseout="this.src='img/s11.jpg';">
+            <div class="card-body">
+              <p class="card-text">綠野仙蹤_炫光青綠-願你追尋你心所願的那一刻，願望如銀河，融化點點星光綿延成路，讓夢想坐落在你指尖上。</p>
+
+              <button type="button" class="buttonproduct">See more</button>
+              <img class="heart" src="img/heart1.png" onclick="javascript:this.src='img/heart2.png'; showalert();" />
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/s41.jpg" onmouseover="this.src='img/s43.jpg';" onmouseout="this.src='img/s41.jpg';">
+            <div class="card-body">
+              <p class="card-text">綠野仙蹤_稻草人火紅橘-若我如你一般聰慧，我也許能跟隨在你身旁，甚至帶領你向前，在彩虹的彼端，有片蔚藍的天空。</p>
+
+              <button type="button" class="buttonproduct">See more</button>
+              <img class="heart" src="img/heart1.png" onclick="javascript:this.src='img/heart2.png'; showalert();" />
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/s61.jpg" onmouseover="this.src='img/s63.jpg';" onmouseout="this.src='img/s61.jpg';">
+            <div class="card-body">
+              <p class="card-text">綠野仙蹤_金毛獅子黃-真正的勇氣在於儘管害怕，依舊能面對眼前的困難，只要你勇敢於夢想，願望便會成真。</p>
+
+              <button type="button" class="buttonproduct">See more</button>
+              <img class="heart" src="img/heart1.png" onclick="javascript:this.src='img/heart2.png'; showalert();" />
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/s51.jpg" onmouseover="this.src='img/s53.jpg';" onmouseout="this.src='img/s51.jpg';">
+            <div class="card-body">
+              <p class="card-text">綠野仙蹤_天空青-深深呼吸、吐氣、吸氣，世界是如此沒好，雨後天晴，彩虹冒出雲頭，而你若安好，我便天晴。</p>
+
+              <button type="button" class="buttonproduct">See more</button>
+              <img class="heart" src="img/heart1.png" onclick="javascript:this.src='img/heart2.png'; showalert();" />
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/s21.jpg" onmouseover="this.src='img/s23.jpg';" onmouseout="this.src='img/s21.jpg';">
+            <div class="card-body">
+              <p class="card-text">綠野仙蹤_銀河深灰-當盲目貪婪，需求無度，當生靈塗炭，萬里朱殷，深深呼吸，因為黎明終將到來，深藏於心的黑暗將引領我們揮別過去。</p>
+
+              <button type="button" class="buttonproduct">See more</button>
+              <img class="heart" src="img/heart1.png" onclick="javascript:this.src='img/heart2.png'; showalert();" />
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/s31.jpg" onmouseover="this.src='img/s33.jpg';" onmouseout="this.src='img/s31.jpg';">
+            <div class="card-body">
+              <p class="card-text">綠野仙蹤_小叮噹魔法綠-我是自由的，那就是我迷失的原因，我們是帶著幸運降臨世間，又或者是，隨波逐流於人世?我們將無從得知。</p>
+
+              <button type="button" class="buttonproduct">See more</button>
+              <img class="heart" src="img/heart1.png" onclick="javascript:this.src='img/heart2.png'; showalert();" />
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+
+  <footer>
+
+    <h6 class="fs"> 抄襲必究.</h6>
+    <span><a href="#a"><button class="bot" value="">Back to top</button></a></span>
+
+  </footer>
+
+</body>
+
+</html>

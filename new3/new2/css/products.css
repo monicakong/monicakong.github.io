@@ -1,0 +1,142 @@
+.pp>a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 70px;
+  opacity: 0;
+
+  filter: alpha(opacity=0);
+  /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+  -webkit-animation: silder 15s linear infinite;
+  animation: silder 15s linear infinite;
+}
+
+.pp>a>img {
+  max-width: 100%;
+}
+
+/*動畫關鍵影格*/
+@-webkit-keyframes silder {
+  3% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  27% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  30% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+@keyframes silder {
+  3% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  27% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  30% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+/*每個圖片各延遲5秒*/
+.pp>a:nth-child(3) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.pp>a:nth-child(2) {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.pp>a:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+/*滑入時停止播放*/
+.pp:hover>a {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.bp1 {
+  border: 5px outset rgba(0, 0, 0, 0.61);
+  height: 500px;
+  width: 1200px;
+  position: absolute;
+  top: 150px;
+  left: 160px;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+
+.fs {
+  text-align: center;
+  color: white;
+  font-family: Comic Sans MS;
+
+}
+
+footer {
+  padding: 20px;
+  background-color: black;
+}
+
+.bot {
+  color: white;
+  font-family: Comic Sans MS;
+  background-color: black;
+  text-align: center;
+  position: relative;
+  left: 47%;
+
+}
+
+.info {
+  position: relative;
+  top: 550px;
+}
+
+.tit3 {
+  position: relative;
+
+  font-family: Comic Sans MS;
+  font-size: 30px;
+  color: rgb(7, 6, 6);
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.tit4 {
+  position: relative;
+  padding: 10px;
+  font-family: Comic Sans MS;
+  font-size: 20px;
+  color: rgb(7, 6, 6);
+  text-align: center;
+  left: -250px;
+  float: right;
+  margin-top: 200px;
+
+}
+
+.pic2 {
+  position: relative;
+  left: 250px;
+  float: left;
+  height: 70%;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}

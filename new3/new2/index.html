@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="final.css">
+  <link rel="stylesheet" href="css/fontawesome/css/all.css">
+  <title>首頁</title>
+  <script>
+    function showalert() {
+      alert("已加入追蹤清單");
+    }
+  </script>
+</head>
+
+<body>
+  <!--header-->
+  <main>
+    <a name="a"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+
+          <a class="nav-link active" aria-current="page" href="index.html"><img src="img/home.png" width="35px"></a>
+
+
+        <li class="nav-item ">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Products</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="spring.html">Spring</a></li>
+            <li><a class="dropdown-item" href="summer.html">Summer</a></li>
+            <li><a class="dropdown-item" href="autumn.html">Autumn</a></li>
+            <li><a class="dropdown-item" href="winter.html">Winter</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html">Shipping Car.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="member.html">Member Center.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="us.html">Contant us.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Log in.</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+
+    </nav>
+    <!--動態廣告-->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+
+          <div class="row">
+            <div class="col">
+              <img src="img/2.jpg" width="105%" height="110%" alt="...">
+            </div>
+            <div class="col">
+              <img src="img/2.jpg" width="105%" height="110%" alt="...">
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+
+          <div class="row">
+            <div class="col">
+              <img src="img/3.jpg" width="110%" height="110%" alt="...">
+            </div>
+            <div class="col">
+              <img src="img/3.jpg" width="110%" height="110%" alt="...">
+            </div>
+          </div>
+
+
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <img src="img/5.jpg" width="110%" height="110%" alt="...">
+            </div>
+            <div class="col">
+              <img src="img/5.jpg" width="110%" height="110%" alt="...">
+            </div>
+          </div>
+        </div>
+      </div><span class="tit">
+
+        <marquee height="50" scrollamount="20">Welcome to Hepbur </marquee>
+
+      </span>
+    </div>
+    </div>
+    </div>
+  </main>
+  <!----商品擺放-->
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/p41.jpg" onmouseover="this.src='img/p43.jpg';" onmouseout="this.src='img/p41.jpg';">
+            <div class="card-body">
+              <p class="card-text">頑皮的芥末黃-小孩才會被說不乖，但你已經是大人了，來玩一場，最有趣的大風吹，吹的是不忠於自己的大人們。</p>
+
+              <a href="products.html"><button type="button" class="buttonproduct">See more</button></a>
+              <img class="heart" src="img/heart1.png" onclick="javascript:this.src='img/heart2.png'; showalert();" />
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/w11.jpg" onmouseover="this.src='img/w13.jpg';" onmouseout="this.src='img/w11.jpg';">
+            <div class="card-body">
+              <p class="card-text">焙茶墨綠-不管我是否會成為我人生中的英雄，也不管是否是其他人成為了我的英雄，都會勇於面對人生的無長。</p>
+
+              <button type="button" class="buttonproduct">See more</button>
+              <img class="heart" src="img/heart1.png" onclick="javascript:this.src='img/heart2.png'; showalert();" />
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/a61.jpg" onmouseover="this.src='img/a63.jpg';" onmouseout="this.src='img/a61.jpg';">
+            <div class="card-body">
+              <p class="card-text">翡翠深碧綠-我們都需要那片荒原，帶我們遠離世界，遠離塵囂，遠離喧嚷，貼近自己，去了解、明白甚麼叫值得。</p>
+
+              <button type="button" class="buttonproduct">See more</button>
+              <img class="heart" src="img/heart1.png" onclick="javascript:this.src='img/heart2.png'; showalert();" />
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/s21.jpg" onmouseover="this.src='img/s23.jpg';" onmouseout="this.src='img/s21.jpg';">
+            <div class="card-body">
+              <p class="card-text">綠野仙蹤_銀河深灰-當盲目貪婪，需求無度，當生靈塗炭，萬里朱殷，深深呼吸，因為黎明終將到來，深藏於心的黑暗將引領我們揮別過去。</p>
+
+              <button type="button" class="buttonproduct">See more</button>
+              <img class="heart" src="img/heart1.png" onclick="javascript:this.src='img/heart2.png'; showalert();" />
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/w41.jpg" onmouseover="this.src='img/w43.jpg';" onmouseout="this.src='img/w41.jpg';">
+            <div class="card-body">
+              <p class="card-text">奶油巧克力-因為不論結局是甚麼，那場痛彻心扉的死亡，都將在某天，用另一種方式，祝福現在，祝福妳我。</p>
+
+              <button type="button" class="buttonproduct">See more</button>
+              <img class="heart" src="img/heart1.png" onclick="javascript:this.src='img/heart2.png'; showalert();" />
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="img/p51.jpg" onmouseover="this.src='img/p53.jpg';" onmouseout="this.src='img/p51.jpg';">
+            <div class="card-body">
+              <p class="card-text">宣紙鵝白-社會總是用不同的方式，『鏡像』我們的模樣，然而常常忘了問自己，那些世界所反映出的文字與描述，是不是自己真正想要的樣子?</p>
+
+              <button type="button" class="buttonproduct">See more</button>
+              <img class="heart" src="img/heart1.png" onclick="javascript:this.src='img/heart2.png'; showalert();" />
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+
+  <footer>
+    <h6 class="fs"> 瀏覽人數：</h6>
+    <h6 class="fs"> 抄襲必究.</h6>
+
+    <span><a href="#a"><button class="bot" value="">Back to top</button></a></span>
+
+  </footer>
+
+</body>
+
+</html>

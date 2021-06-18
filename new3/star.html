@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    .star {
+      position: relative;
+      display: inline-block;
+      line-height: 1em;
+    }
+
+    .star input {
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+      width: 1em;
+      height: 1em;
+      font: inherit;
+      background: center 0/cover no-repeat;
+      outline: 0 none transparent;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    .star label {
+      display: none;
+      float: right;
+      margin-left: 0.5em;
+    }
+
+    .star input:first-child {
+      display: none;
+      /* -webkit-appearance:radio;-moz-appearance:radio;appearance:radio; */
+    }
+
+    .star input:checked~input {
+      background-position: center -1em;
+    }
+
+    .star:hover input:checked~input {
+      background-position: center 0;
+    }
+
+    .star:hover input:hover~input {
+      background-position: center -1em;
+    }
+
+    .star input:checked+label {
+      display: block;
+    }
+
+    .star:hover input:checked+label {
+      display: none;
+    }
+
+    .star:hover input:hover+label {
+      display: block;
+    }
+
+    .star-once input:first-child:not(:checked)~input {
+      background-position: center 0;
+      pointer-events: none;
+    }
+
+    .star-once input:not(:first-child):checked~input {
+      background-position: center -1em;
+    }
+
+    .star-once input:first-child:not(:checked)~label {
+      display: none;
+    }
+
+    .star-once input:not(:first-child):checked+label {
+      display: block;
+    }
+
+    .star-lock {
+      pointer-events: none;
+    }
+
+    /*
+     以上的 css 可寫入統一樣式表
+     以下的樣式 可在用的地方分別處理，自定義 大小，星星圖片
+     */
+    .star {
+      font-size: 30px;
+    }
+
+    .star input {
+      background-image: url("new2/img/star.png")
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="star">
+    <input type="radio" name="rdStar" checked="checked" />
+    <input type="radio" name="rdStar" value="1" />
+    <input type="radio" name="rdStar" value="2" />
+    <input type="radio" name="rdStar" value="3" />
+    <input type="radio" name="rdStar" value="4" />
+    <input type="radio" name="rdStar" value="5" />
+  </div>
+</body>
+
+</html>
+</body>
+
+</html>

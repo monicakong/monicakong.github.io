@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="final.css">
+  <link rel="stylesheet" href="css/products.css">
+  <title>商品頁</title>
+</head>
+
+
+
+<body style="background-color:whitesmoke; background-size: cover;">
+  <!--header-->
+  <main>
+    <a name="a"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+
+          <a class="nav-link active" aria-current="page" href="index.html"><img src="img/home.png" width="35px"></a>
+
+
+        <li class="nav-item ">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Products</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="spring.html">Spring</a></li>
+            <li><a class="dropdown-item" href="summer.html">Summer</a></li>
+            <li><a class="dropdown-item" href="autumn.html">Autumn</a></li>
+            <li><a class="dropdown-item" href="winter.html">Winter</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html">Shipping Car.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="member.html">Member Center.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="us.html">Contant us.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Log in.</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+    </nav>
+  </main>
+  <span class="tit">
+
+    <marquee height="50" scrollamount="15">滿2000千免運費! </marquee>
+
+  </span>
+
+  <!--商品-->
+
+  <div class="bp1">
+    <div class="pp">
+      <a href='#'><img src="img/p41.jpg" width="50%"></a>
+      <a href='#'><img src="img/p42.jpg" width="50%"></a>
+      <a href='#'><img src="img/p43.jpg" width="50%"></a>
+    </div>
+
+
+    <div class="ppp">
+
+      <div class="tab">
+
+        <button class="tablinks" onclick="openCity(event, 'buy')">商品選購</button>
+
+        <button class="tablinks" onclick="openCity(event, 'map')">付款方式</button>
+        <button class="tablinks" onclick="openCity(event, 'talk')">留言區</button>
+      </div>
+
+      <div id="buy" class="tabcontent">
+        <div class="po">
+          <div class="price">
+            NT$260</div>
+
+          <tr>
+
+            <td scope="row"><img src="img/p41.jpg" width="90px" padding="10px"></td>
+            <td>第一香爐</td>
+
+            <td>
+              <form action="/action_page.php">
+                <label for="quantity">購買數量:</label>
+                <input type="number" id="quantity" name="購買數量" min="0" max="100" step="1" value="1">
+
+              </form>
+            </td>
+          </tr>
+        </div>
+        <tr>
+          <td>
+
+            庫存數量:
+          </td>
+          <td>
+            <button class="bot" value="">立即下單</button>
+            <button class="bot" value="">加入購物車</button>
+          </td>
+
+        </tr>
+        <div class="dis">
+          滿2000千免運費!
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+      <div id="map" class="tabcontent">
+        <tr>
+
+          <td scope="row"><img src="img/box.png" width="50px" padding="15px"></td>
+          <td>貨到付款</td>
+
+          <td>
+            <select class="form-select">
+              <option selected> 便利商店</option>
+              <option value="1">全家取貨</option>
+              <option value="2">7-11取貨</option>
+              <option value="3">OK Mart取貨</option>
+
+            </select><br>
+          </td>
+          <td>收貨門市名稱 <input value=""></td>
+          <br>
+
+          <td scope="row"><img src="img/visa.png" width="50px" padding="15px"></td>
+          <td>信用卡付款</td><br>
+
+          <td>信用卡後五碼 <input value=""></td>
+        </tr>
+      </div>
+
+
+      <div id="talk" class="tabcontent">
+        <tr>
+
+          <td scope="row"><img src="img/com.png" width="50px" padding="15px">
+
+          </td>
+          <form>
+            <td>我有話要說..</td>
+            <br>
+            <td><input type="" style="height: 150px; width:550px ;"></td><br>
+            <button class="bot2" type="submit">送出留言</button>
+
+          </form>
+
+
+
+
+        </tr>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="info">
+    <div class="tit3">
+      商品介紹
+
+    </div class="info2">
+    <div class="tit4">
+      頑皮的芥末黃-小孩才會被說不乖，但你已經是大人了。<br>來玩一場，最刺激的鬼抓人，但抓的是口是心扉的人類。<br>來玩一場，最有趣的大風吹，吹的是不忠於自己的大人們。
+
+    </div>
+    <div class="pic2">
+      <img src="img/n2_4.jpg" width="50%">
+    </div>
+  </div>
+  <script>
+    function openCity(evt, work) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(work).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+  </div>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
