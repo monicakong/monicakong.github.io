@@ -108,6 +108,12 @@ footer {
 .tit {
     font-family: Comic Sans MS;
     font-size: 30px;
+    text-align: center;
+}
+
+.tit:hover {
+    color: black;
+    text-shadow: 4px 2px 3px #333333;
 }
 
 .tit1 {
